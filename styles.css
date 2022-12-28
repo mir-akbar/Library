@@ -120,10 +120,9 @@ button {
     cursor: pointer;
 }
 
-button:active{
-    transform: translateY(-1px);
+button:active {
+    transform: translateY(10px);
 }
-
 .btn {
     background-color: #7342d6;
     color: white;
@@ -141,7 +140,7 @@ button:active{
 }
 
 .container {
-    padding: 230px 0;
+    padding: 240px 0;
 }
 
 .row {
@@ -222,13 +221,14 @@ Features
 */
 
 #features{
-    height:1000px;
+    height:700px;
     background-color: rgba(115, 66, 214, 0.1);
 }
 
 
 .books{
     display: flex;
+    transform: translateY(-40%);
 }
 
 .book{
@@ -237,5 +237,50 @@ Features
 }
 
 .book__img{
-    max-height:300px;
+    max-height:360px;
+    transition: all 300ms ease;
+    border-radius:4px;
+    cursor: not-allowed;
 }
+
+
+.book__img--wrapper{
+    margin-bottom:8px;
+    overflow: hidden;
+}
+
+.book:hover .book__img{
+    transform:scale(1.03);
+}
+
+.book__title{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.book__title:hover{
+    text-decoration:underline;
+    cursor:not-allowed;
+}
+
+.book__ratings{
+    margin-bottom:8px;
+    color:#fabf2a;
+}
+
+.book__price--normal{
+    text-decoration: line-through;
+    padding-right:6px;
+    color:#bfbfbf;
+}
+.resize{
+    transform:translateY(-600%);
+}
+
+/*
+
+
+Latest
+
+
+*/
